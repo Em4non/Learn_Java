@@ -1,3 +1,5 @@
+package HomeWork_2.CardGame;
+
 import java.util.Scanner;
 
 public class Main {

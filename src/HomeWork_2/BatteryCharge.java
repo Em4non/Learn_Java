@@ -1,3 +1,5 @@
+package HomeWork_2;
+
 class BatteryCharge {
     static int[] cost = new int[25];
     public int getChargeCost(int st, int ct) {

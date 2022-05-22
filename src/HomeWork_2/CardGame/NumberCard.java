@@ -1,3 +1,5 @@
+package HomeWork_2.CardGame;
+
 class NumberCard {
     public int[] cards;
     public int mark;

@@ -1,3 +1,5 @@
+package HomeWork_2.CardGame;
+
 class CardGame {
     public NumberCard[] card;
     public CardGame() {
