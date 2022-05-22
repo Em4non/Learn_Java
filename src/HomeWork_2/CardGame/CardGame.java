@@ -2,19 +2,19 @@ package HomeWork_2.CardGame;
 
 class CardGame {
     public NumberCard[] card;
+
     public CardGame() {
         card = new NumberCard[1000];
-        for(int i=0;i<100;i++){
-            card[i]=new NumberCard();
+        for (int i = 0; i < 100; i++) {
+            card[i] = new NumberCard();
         }
         card[0].nextmark = 1;
-        card[1].mark=1;
+        card[1].mark = 1;
     }
 
     public int getIndexForFit(NumberCard c) {
-        for (int i = 0; i < 4; i++)
-        {
-            for (int j = 0; j != 1;) {
+        for (int i = 0; i < 4; i++) {
+            for (int j = 0; j != 1; ) {
                 boolean left = false, right = false;
                 NumberCard a = card[j], b = card[card[j].nextmark];
                 if (a.mark == 0 || a.cards[1] == c.cards[3])
@@ -37,22 +37,22 @@ class CardGame {
             return false;
         c.nextmark = card[x].nextmark;
         card[x].nextmark = c.mark;
-        card[c.mark]=c;
+        card[c.mark] = c;
         return true;
     }
 
     public void print() {
         int x = card[0].nextmark;
-        boolean flag=false;
+        boolean flag = false;
         while (x != 1) {
             for (int i = 0; i < 4; i++) {
-                if(flag)
-                    System.out.print(" "+card[x].cards[i]);
+                if (flag)
+                    System.out.print(" " + card[x].cards[i]);
                 else
                     System.out.print(card[x].cards[i]);
-                flag=true;
+                flag = true;
             }
-            x=card[x].nextmark;
+            x = card[x].nextmark;
         }
 
     }

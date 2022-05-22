@@ -17,7 +17,7 @@ class NumberCard {
     }
 
     public NumberCard() {
-        cards =new int[4];
+        cards = new int[4];
         left = 0;
         right = 0;
         mark = 0;
