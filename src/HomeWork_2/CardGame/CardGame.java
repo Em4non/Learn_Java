@@ -5,7 +5,7 @@ class CardGame {
 
     public CardGame() {
         card = new NumberCard[1000];
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 1000; i++) {
             card[i] = new NumberCard();
         }
         card[0].nextmark = 1;
@@ -33,8 +33,7 @@ class CardGame {
 
     public boolean insertCard(NumberCard c) {
         int x = getIndexForFit(c);
-        if (x == -1)
-            return false;
+        if (x == -1) return false;
         c.nextmark = card[x].nextmark;
         card[x].nextmark = c.mark;
         card[c.mark] = c;
