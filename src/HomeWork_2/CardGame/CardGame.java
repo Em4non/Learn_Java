@@ -3,7 +3,7 @@ package HomeWork_2.CardGame;
 class CardGame {
     public NumberCard[] card;
     public CardGame() {
-        card=new NumberCard[100];
+        card = new NumberCard[1000];
         for(int i=0;i<100;i++){
             card[i]=new NumberCard();
         }

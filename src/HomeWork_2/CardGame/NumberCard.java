@@ -9,9 +9,7 @@ class NumberCard {
 
     public NumberCard(int[] a) {
         cards = new int[4];
-        for (int i = 0; i < 4; i++) {
-            cards[i] = a[i];
-        }
+        System.arraycopy(a, 0, cards, 0, 4);
         left = 0;
         right = 0;
         mark = 0;
