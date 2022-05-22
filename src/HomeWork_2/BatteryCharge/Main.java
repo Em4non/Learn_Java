@@ -1,4 +1,4 @@
-package HomeWork_2;
+package HomeWork_2.BatteryCharge;
 
 import java.util.Scanner;
 public class Main {

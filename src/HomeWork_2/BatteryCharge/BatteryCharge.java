@@ -1,4 +1,4 @@
-package HomeWork_2;
+package HomeWork_2.BatteryCharge;
 
 class BatteryCharge {
     static int[] cost = new int[25];
