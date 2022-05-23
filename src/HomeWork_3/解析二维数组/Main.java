@@ -8,8 +8,25 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         s = sc.next();
         int column = 0, row = 0;
-        for (int i = 0; i < s.length(); i++) {
+        System.out.print("d[0,0] = " + s.charAt(0));
+        for (int i = 1; i < s.length(); i++) {
             char c = s.charAt(i);
+            if (c == ',') {
+                row++;
+                i++;
+                System.out.print(" " + "d[" + column + "," + row + "]" + " = " + s.charAt(i));
+            } else if (c == ';') {
+                row = 0;
+                column++;
+                i++;
+                System.out.println();
+                System.out.print("d[" + column + "," + row + "]" + " = " + s.charAt(i));
+            } else if (s.charAt(i) >= '0' && s.charAt(i) <= '9') {
+
+                System.out.print(s.charAt(i));
+
+            }
+
 
         }
     }
